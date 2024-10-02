@@ -76,3 +76,8 @@ resource "aws_instance" "Natwest-Vm-Ewan" {
 output "PublicIpAddress" {
   value = aws_instance.Natwest-Vm-Ewan.public_ip
 }
+
+resource "aws_s3_bucket" "Ewan-Bucket" {
+  bucket = "ewbucket02102024"
+  
+}
