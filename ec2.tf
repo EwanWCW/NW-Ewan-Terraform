@@ -44,7 +44,7 @@ resource "aws_instance" "Natwest-Vm-Ewan" {
     source      = "docker.sh"
     destination = "/home/ubuntu/docker.sh"
   }
-    provisioner "remote-exec" {
+  provisioner "remote-exec" {
     inline = [
       "sudo mkdir -p /home/ubuntu/php",
       "sudo mkdir -p /home/ubuntu/project",
@@ -54,7 +54,7 @@ resource "aws_instance" "Natwest-Vm-Ewan" {
   }
 
   provisioner "file" {
-    source = "dockerfiles/"
+    source      = "dockerfiles/"
     destination = "/home/ubuntu/project"
   }
   provisioner "remote-exec" {
