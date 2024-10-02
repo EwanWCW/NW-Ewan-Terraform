@@ -81,3 +81,9 @@ resource "aws_s3_bucket" "Ewan-Bucket" {
   bucket = "ewbucket02102024"
   
 }
+
+
+resource "aws_s3_bucket" "Ewan2-Bucket" {
+  bucket = "ew2bucket02102024"
+  
+}
